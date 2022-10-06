@@ -4,7 +4,7 @@ const webdavController = require("../controller/webdav-controller");
 let router = express.Router();
 
 let initWebRoutes = (app) => {
-    router.get("/product-images", webdavController.getImagesData);
+    router.get("/graphics", webdavController.getImagesData);
 
     return app.use("/", router);
 }

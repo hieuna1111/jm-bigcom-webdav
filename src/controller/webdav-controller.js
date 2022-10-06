@@ -6,6 +6,7 @@ let getImagesData = (req, res) => {
   const fullSearchPath = "/content/shop-by-graphics";
   let page = parseInt(req.query.page) || 1;
   let limit = parseInt(req.query.limit) || 10;
+  if (limit > 10) limit = 10;
 
   //access to webdav
   webdav.connect().then(async (client) => {

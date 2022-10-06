@@ -9,6 +9,9 @@ let paginateGraphics = (contents, limit, page) => {
         if (basename.includes("png")) {
           image.basename = parseInt(basename.replace(".png", ""));
         }
+        if (basename.includes("gif")) {
+          image.basename = parseInt(basename.replace(".gif", ""));
+        }
       });
       let data = contents
           .sort((a, b) => {

@@ -1,4 +1,4 @@
-const webdav = require("../config/webdav-connector");
+const webdav = require("../config/webdav.connector");
 const webdavService = require("../service/webdav.service");
 
 let getImagesData = (req, res) => {
